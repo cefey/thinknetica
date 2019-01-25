@@ -9,4 +9,3 @@ if ideal_weight < 0
 else
   puts "#{name},  ваш идеальный вес должен быть #{ideal_weight}"
 end
-

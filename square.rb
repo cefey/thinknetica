@@ -1,23 +1,23 @@
-def square #Завернем решение уравнение в функцию
+def square 
   print "Введите коффициент a: "
   a = gets.chomp.to_f
-  if a == 0.0  #на ноль делить нельзя
+  if a == 0.0  
     while a == 0
       print "Коэффициент a не должен быть равным 0. Введите другой "
-    a = gets.chomp.to_f
-      end
+      a = gets.chomp.to_f
+    end
   end
   print "Введите коффициент b: "
   b = gets.chomp.to_f
   print "Введите коффициент c: "
   c = gets.chomp.to_f
-  d = (b ** 2) - (4 * a * c)
+  d = b**2 - 4 * a * c
   if d < 0.0
     puts "Дискриминант равен #{d}. Корней нет"
     return
   end
-  
-  sqr = Math.sqrt(d) #дискриминант
+  #дискриминант
+  sqr = Math.sqrt(d) 
   if d > 0.0
     puts "Дискриминант равен #{d}"
     puts "Корень x1 равен #{( -b + sqr) / 2 * a}"
